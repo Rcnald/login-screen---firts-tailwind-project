@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .bg-gradient-primary{
+        @apply bg-gradient-to-r from-purple-primary to-red-primary;
+    }
+
+    .btn{
+        @apply bg-gradient-primary p-4 font-inter font-semibold text-base text-white capitalize rounded-lg
+    }
+}

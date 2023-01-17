@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <link rel="shortcut icon" href="../src/assets/favicon.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Design Guild</title>
+</head>
+<body class="bg-gradient-primary flex flex-col h-screen">
+    <div class="text-white h-fit flex justify-center items-center grow shrink-0 gap-4 min-h-[180px] md:hidden">
+        <img src="../src/assets/favicon.svg" alt="Design Guild Logo" class="w-[48px]">
+        <p class="font-inter font-semibold text-3xl h-fit">Design Guild</p>
+    </div>
+
+    <div class="bg-banner-mobile bg-no-repeat bg-bottom bg-cover w-full pt-32">
+        <div class="grid h-[90%] grid-cols-1 place-items-center relative place-content-center gap-y-[56px]">
+            <div class="w-[90%] max-w-[380px] row-span-1">
+                <h1 class="font-inter font-bold text-brown-primary text-2xl leading-[130%] text-left max-w-[205px] w-full mb-4">Join our community today</h1>
+                <p class="font-sora font-light text-brown-primary text-sm leading-[100%] mb-12">Get connected, find designers to start a project</p>
+                <button class="btn w-full mb-6">sign up</button>
+                <p class="first-letter:capitalize font-inter font-normal text-base text-center mb-4">or, login with</p>
+                <div class="flex gap-4 h-[38px]">
+                    <p class="flex-1 text-center py-2 border-purple-light border-[1px] rounded text-purple-dark font-inter text-sm capitalize">facebook</p>
+                    <p class="flex-1 text-center py-2 border-purple-light border-[1px] rounded text-purple-dark font-inter text-sm capitalize">linked in</p>
+                    <p class="flex-1 text-center py-2 border-purple-light border-[1px] rounded text-purple-dark font-inter text-sm capitalize">google</p>
+                </div>
+            </div>
+            
+            <form action="" class="w-[90%] max-w-[380px] row-span-1">
+                <fieldset class="flex flex-col gap-2 mb-4">
+                    <label for="" class="font-inter font-semibold text-base capitalize">email</label>
+                    <input type="text" class="border-brown-100 border-[1px] rounded-lg p-4 outline-brown-200 h-[38px]">
+                </fieldset>
+                
+                <fieldset class="flex flex-col gap-2 mb-4">
+                    <label for="" class="font-inter font-semibold text-base capitalize">password</label>
+                    <fieldset class="relative">
+                        <input type="text" class="border-brown-100 border-[1px] rounded-lg p-4 outline-brown-200 max-w-[380px] w-full h-[38px]">
+                        <i class="fa-solid fa-eye-slash text-brown-200 absolute top-3 right-2"></i>
+                    </fieldset>
+                </fieldset>
+    
+                <p class="font-inter font-normal text-base text-brown-primary text-right first-letter:capitalize leading-[100%] relative after:content-[' '] after:absolute after:w-[8.5rem] after:h-[1px] after:bg-brown-primary after:bottom-[-4px] after:right-0  mb-4">forgot password?</p>
+                
+                <button class="btn w-full h-[48px] py-2 mb-[40px]">login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
