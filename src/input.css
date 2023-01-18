@@ -8,6 +8,6 @@
     }
 
     .btn{
-        @apply bg-gradient-primary p-4 font-inter font-semibold text-base text-white capitalize rounded-lg
+        @apply bg-gradient-primary p-4 font-inter font-semibold text-base text-white capitalize rounded-lg hover:scale-105 duration-300
     }
 }

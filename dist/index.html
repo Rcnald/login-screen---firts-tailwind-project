@@ -16,44 +16,72 @@
     <title>Design Guild</title>
 </head>
 <body class="bg-gradient-primary flex flex-col h-screen">
-    <div class="text-white h-fit flex justify-center items-center grow shrink-0 gap-4 min-h-[180px] md:hidden">
+    <div class="text-white h-fit flex justify-center items-center grow shrink-0 gap-4 min-h-[180px] md:hidden mx-auto">
         <img src="../src/assets/favicon.svg" alt="Design Guild Logo" class="w-[48px]">
         <p class="font-inter font-semibold text-3xl h-fit">Design Guild</p>
     </div>
 
-    <div class="bg-banner-mobile bg-no-repeat bg-bottom bg-cover w-full pt-32">
-        <div class="grid h-[90%] grid-cols-1 place-items-center relative place-content-center gap-y-[56px]">
-            <div class="w-[90%] max-w-[380px] row-span-1">
-                <h1 class="font-inter font-bold text-brown-primary text-2xl leading-[130%] text-left max-w-[205px] w-full mb-4">Join our community today</h1>
+    <div class="bg-banner-mobile bg-no-repeat bg-top bg-cover w-full pt-32 md:bg-bottom h-[777px]">
+        <div class="grid h-auto grid-cols-1 place-items-center relative place-content-center gap-y-[56px]">
+            <div class="text-brown-primary h-fit hidden justify-center items-center grow shrink-0 gap-4 min-h-[180px] mx-auto md:flex">
+                <img src="../src/assets/favicon.svg" alt="Design Guild Logo" class="w-[48px] brightness-[.2]">
+                <p class="font-inter font-semibold text-3xl h-fit">Design Guild</p>
+            </div>
+
+            <div class="hidden md:flex flex-col">
+                <h1>welcome to design guild</h1> 
+                <p>join the world’s largest community for designers</p>
+                <h5>recent login</h5>
+                <div>
+                    <div>
+                        <img src="" alt="">
+                        <h6>allana hepburn</h6>
+                    </div>
+
+                    <div>
+                        <img src="" alt="">
+                        <h6>andrew pochink</h6>
+                    </div>
+
+                    <div>
+                        <i class="fa-light fa-plus"></i>
+                        <h6>add account</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-[90%] max-w-[380px] row-span-1 md:order-1">
+                <h2 class="font-inter font-bold text-brown-primary text-2xl leading-[130%] text-left max-w-[205px] w-full mb-4">Join our community today</h2>
                 <p class="font-sora font-light text-brown-primary text-sm leading-[100%] mb-12">Get connected, find designers to start a project</p>
                 <button class="btn w-full mb-6">sign up</button>
-                <p class="first-letter:capitalize font-inter font-normal text-base text-center mb-4">or, login with</p>
+                <h5 class="first-letter:capitalize font-inter font-normal text-base text-center mb-4">or, login with</h5>
                 <div class="flex gap-4 h-[38px]">
-                    <p class="flex-1 text-center py-2 border-purple-light border-[1px] rounded text-purple-dark font-inter text-sm capitalize">facebook</p>
-                    <p class="flex-1 text-center py-2 border-purple-light border-[1px] rounded text-purple-dark font-inter text-sm capitalize">linked in</p>
-                    <p class="flex-1 text-center py-2 border-purple-light border-[1px] rounded text-purple-dark font-inter text-sm capitalize">google</p>
+                    <p class="flex-1 text-center py-2 border-purple-light border-[1px] rounded text-purple-dark font-inter text-sm capitalize hover:translate-y-[-5px] duration-200 cursor-pointer">facebook</p>
+                    <p class="flex-1 text-center py-2 border-purple-light border-[1px] rounded text-purple-dark font-inter text-sm capitalize hover:translate-y-[-5px] duration-200 cursor-pointer">linked in</p>
+                    <p class="flex-1 text-center py-2 border-purple-light border-[1px] rounded text-purple-dark font-inter text-sm capitalize hover:translate-y-[-5px] duration-200 cursor-pointer">google</p>
                 </div>
             </div>
             
             <form action="" class="w-[90%] max-w-[380px] row-span-1">
                 <fieldset class="flex flex-col gap-2 mb-4">
-                    <label for="" class="font-inter font-semibold text-base capitalize">email</label>
-                    <input type="text" class="border-brown-100 border-[1px] rounded-lg p-4 outline-brown-200 h-[38px]">
+                    <label for="login-email" class="font-inter font-semibold text-base capitalize">email</label>
+                    <input type="email" id="login-email" class="border-brown-100 border-[1px] rounded-lg p-4 outline-brown-200 h-[38px] font-inter font-normal leading-4 text-brown-primary max-w-[380px] w-full invalid:border-red-500 invalid:border-2 invalid:text-red-500 invalid:outline-red-500">
                 </fieldset>
                 
                 <fieldset class="flex flex-col gap-2 mb-4">
-                    <label for="" class="font-inter font-semibold text-base capitalize">password</label>
+                    <label for="login-password" class="font-inter font-semibold text-base capitalize">password</label>
                     <fieldset class="relative">
-                        <input type="text" class="border-brown-100 border-[1px] rounded-lg p-4 outline-brown-200 max-w-[380px] w-full h-[38px]">
-                        <i class="fa-solid fa-eye-slash text-brown-200 absolute top-3 right-2"></i>
+                        <input required type="password" id="login-password" class="border-brown-100 border-[1px] rounded-lg p-4 outline-brown-200 max-w-[380px] w-full h-[38px] font-inter font-normal leading-4 text-brown-primary pr-8">
+                        <i id="show-password" class="fa-solid fa-eye-slash text-brown-200 absolute top-3 right-2 cursor-pointer"></i>
                     </fieldset>
                 </fieldset>
     
-                <p class="font-inter font-normal text-base text-brown-primary text-right first-letter:capitalize leading-[100%] relative after:content-[' '] after:absolute after:w-[8.5rem] after:h-[1px] after:bg-brown-primary after:bottom-[-4px] after:right-0  mb-4">forgot password?</p>
+                <p class="font-inter font-normal text-base text-brown-primary text-right first-letter:capitalize leading-[100%] relative after:content-[' '] after:absolute after:w-[8.5rem] after:h-[1px] after:bg-brown-primary after:bottom-[-4px] after:right-0  mb-4 cursor-pointer hover:brightness-200 hover:after:brightness-100 ">forgot password?</p>
                 
-                <button class="btn w-full h-[48px] py-2 mb-[40px]">login</button>
+                <input type="submit" value="login" class="btn w-full h-[48px] py-2 mb-[40px] cursor-pointer">
             </form>
         </div>
     </div>
 </body>
+<script src="script.js"></script>
 </html>
