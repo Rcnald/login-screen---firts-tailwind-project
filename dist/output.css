@@ -824,6 +824,11 @@ video {
   line-height: 1.5rem;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -854,6 +859,10 @@ video {
 
 .leading-4 {
   line-height: 1rem;
+}
+
+.leading-\[\] {
+  line-height: ;
 }
 
 .text-white {
