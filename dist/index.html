@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="../src/assets/favicon.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,38 +20,40 @@
         <p class="font-inter font-semibold text-3xl h-fit">Design Guild</p>
     </div>
 
-    <div class="bg-banner-mobile bg-no-repeat bg-top bg-cover w-full pt-32 md:bg-bottom h-[777px]">
-        <div class="grid h-auto grid-cols-1 place-items-center relative place-content-center gap-y-[56px]">
-            <div class="text-brown-primary h-fit hidden justify-center items-center grow shrink-0 gap-4 min-h-[180px] mx-auto md:flex">
+    <div class="bg-banner-mobile bg-no-repeat bg-top bg-cover w-full pt-32 md:pt-0 md:bg-bottom h-[777px]">
+        <div class="grid h-auto grid-cols-1 md:grid-rows-[200px,minmax(0,1fr)] md:grid-cols-5 place-items-center relative place-content-center gap-y-[56px] md:gap-0 md:place-content-start md:place-items-start md:max-w-[1475px] md:mx-auto md:w-[95%] md:mt-8">
+            <div class="text-brown-primary h-fit hidden justify-center items-center grow shrink-0 gap-4 md:flex md:order-1 md:col-span-1 mt-3 2lg:mt-8">
                 <img src="../src/assets/favicon.svg" alt="Design Guild Logo" class="w-[48px] brightness-[.2]">
                 <p class="font-inter font-semibold text-3xl h-fit">Design Guild</p>
             </div>
 
-            <div class="hidden md:flex flex-col">
-                <h1 class="font-sora font-semibold leading-[100%] text-5xl text-brown-primary">welcome to design guild</h1> 
-                <p>join the world’s largest community for designers</p>
-                <h5>recent login</h5>
-                <div>
-                    <div>
-                        <img src="../src/assets/photos-profile.svg" alt="">
-                        <h6>allana hepburn</h6>
+            <div class="hidden md:flex flex-col md:order-3 md:col-span-3">
+                <h1 class="font-sora font-semibold leading-[100%] text-5xl text-brown-primary text-left mb-6">welcome to design guild</h1> 
+                <p class="font-sora font-light text-xl text-brown-primary text-left mb-10">join the world’s largest community for designers</p>
+                <h5 class="font-sora font-normal text-lg text-brown-primary capitalize mb-6">recent login</h5>
+                <div class="flex gap-4">
+                    <div class="w-[156px] h-[156px] border-brown-100 border-[1px] rounded-2xl flex justify-center items-center flex-col gap-4">
+                        <img src="../src/assets/photos-profile.svg" alt="" class="h-[80px] w-[80px]">
+                        <h6 class="font-dm-sans font-bold text-sm text-brown-primary capitalize">allana hepburn</h6>
                     </div>
 
-                    <div>
-                        <img src="../src/assets/photos-profile-1.svg" alt="">
-                        <h6>andrew pochink</h6>
+                    <div class="w-[156px] h-[156px] border-brown-100 border-[1px] rounded-2xl flex justify-center items-center flex-col gap-4">
+                        <img src="../src/assets/photos-profile-1.svg" alt="" class="h-[80px] w-[80px]">
+                        <h6 class="font-dm-sans font-bold text-sm text-brown-primary capitalize">andrew pochink</h6>
                     </div>
 
-                    <div>
-                        <i class="fa-light fa-plus"></i>
-                        <h6>add account</h6>
+                    <div class="w-[156px] h-[156px] border-brown-100 border-[1px] rounded-2xl flex justify-center items-center flex-col gap-4">
+                        <div class="flex justify-center items-center bg-[#DFCFC2] rounded-full h-[80px] w-[80px]">
+                            <img src="../src/assets/plus-icon.svg" alt="">
+                        </div>
+                        <h6 class="font-dm-sans font-bold text-sm text-brown-primary capitalize">add account</h6>
                     </div>
                 </div>
             </div>
 
-            <div class="w-[90%] max-w-[380px] row-span-1 md:order-1">
-                <h2 class="font-inter font-bold text-brown-primary text-2xl leading-[130%] text-left max-w-[205px] w-full mb-4">Join our community today</h2>
-                <p class="font-sora font-light text-brown-primary text-sm leading-[100%] mb-12">Get connected, find designers to start a project</p>
+            <div class="w-[90%] max-w-[380px] row-span-1 md:order-4 md:col-span-2 md:ml-[44px]">
+                <h2 class="font-inter font-bold text-brown-primary text-2xl leading-[130%] text-left max-w-[205px] w-full mb-4 md:text-[32px] md:max-w-[347px]">Join our community today</h2>
+                <p class="font-sora font-light text-brown-primary text-sm leading-[100%] mb-12 md:text-xl">Get connected, find designers to start a project</p>
                 <button class="btn w-full mb-6">sign up</button>
                 <h5 class="first-letter:capitalize font-inter font-normal text-base text-center mb-4">or, login with</h5>
                 <div class="flex gap-4 h-[38px]">
@@ -60,23 +63,23 @@
                 </div>
             </div>
             
-            <form action="" class="w-[90%] max-w-[380px] row-span-1">
-                <fieldset class="flex flex-col gap-2 mb-4">
+            <form action="" class="w-[90%] max-w-[380px] row-span-1 md:order-2 md:grid grid-rows-[minmax(0, 1fr) minmax(0,30px)] grid-cols-[minmax(0,380px),minmax(0,380px),fit-content(175px)] md:gap-x-6 md:col-span-4 md:w-full md:max-w-fit md:ml-auto">
+                <fieldset class="flex flex-col gap-2 mb-4 order-1">
                     <label for="login-email" class="font-inter font-semibold text-base capitalize">email</label>
-                    <input type="email" id="login-email" class="border-brown-100 border-[1px] rounded-lg p-4 outline-brown-200 h-[38px] font-inter font-normal leading-4 text-brown-primary max-w-[380px] w-full invalid:border-red-500 invalid:border-2 invalid:text-red-500 invalid:outline-red-500">
+                    <input type="email" id="login-email" class="border-brown-100 border-[1px] rounded-lg p-4 outline-brown-200 h-[48px] font-inter font-normal leading-4 text-brown-primary max-w-[380px] w-full invalid:border-red-500 invalid:border-2 invalid:text-red-500 invalid:outline-red-500">
                 </fieldset>
                 
-                <fieldset class="flex flex-col gap-2 mb-4">
+                <fieldset class="flex flex-col gap-2 mb-4 order-2">
                     <label for="login-password" class="font-inter font-semibold text-base capitalize">password</label>
                     <fieldset class="relative">
-                        <input required type="password" id="login-password" class="border-brown-100 border-[1px] rounded-lg p-4 outline-brown-200 max-w-[380px] w-full h-[38px] font-inter font-normal leading-4 text-brown-primary pr-8">
-                        <i id="show-password" class="fa-solid fa-eye-slash text-brown-200 absolute top-3 right-2 cursor-pointer"></i>
+                        <input required type="password" id="login-password" class="border-brown-100 border-[1px] rounded-lg p-4 outline-brown-200 max-w-[380px] w-full h-[48px] font-inter font-normal leading-4 text-brown-primary pr-8">
+                        <i id="show-password" class="fa-solid fa-eye-slash text-brown-200 absolute top-4 right-3 cursor-pointer"></i>
                     </fieldset>
                 </fieldset>
     
-                <p class="font-inter font-normal text-base text-brown-primary text-right first-letter:capitalize leading-[100%] relative after:content-[' '] after:absolute after:w-[8.5rem] after:h-[1px] after:bg-brown-primary after:bottom-[-4px] after:right-0  mb-4 cursor-pointer hover:brightness-200 hover:after:brightness-100 ">forgot password?</p>
+                <p class="order-4 col-start-2 col-end-2 md:text-left font-inter font-normal text-base text-brown-primary text-right first-letter:capitalize leading-[100%] relative after:content-[' '] after:absolute after:w-[8.5rem] after:h-[1px] after:bg-brown-primary after:bottom-[-4px] after:right-0 md:after:left-0 mb-4 cursor-pointer hover:brightness-200 hover:after:brightness-100 ">forgot password?</p>
                 
-                <input type="submit" value="login" class="btn w-full h-[48px] py-2 mb-[40px] cursor-pointer">
+                <input type="submit" value="login" class="order-3 btn w-full h-[48px] py-2 mb-[40px] md:mb-0 md:mt-4 cursor-pointer md:max-w-[175px] md:min-w-[175px] self-center">
             </form>
         </div>
     </div>

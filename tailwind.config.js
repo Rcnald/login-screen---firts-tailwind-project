@@ -17,6 +17,8 @@ module.exports = {
 
       screens:{
         'sm':'428px',
+        'md':'900px',
+        '2lg':'1313px',
       },
 
       backgroundImage:{
@@ -25,7 +27,8 @@ module.exports = {
 
       fontFamily:{
         'inter':["'Inter', sans-serif"],
-        'sora':["'Sora', sans-serif"]
+        'sora':["'Sora', sans-serif"],
+        'dm-sans':["'DM Sans', sans-serif"],
       },
     },
   },
